@@ -2216,7 +2216,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-about {
   padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-bottom: 1.8rem;
   background-color: #ffffff;
   position: relative;
 }
@@ -2284,8 +2284,8 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
   .s-about {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .process__vline-left {
@@ -2348,7 +2348,7 @@ html.no-csstransitions .home-content__main {
   .process h4 {
     font-size: 2.2rem;
     padding-left: 5.4rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.8 rem;
   }
   .process__vline-left {
     display: none;
@@ -2458,7 +2458,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-works {
   background: #ffffff;
-  padding: 18rem 0 24rem;
+  padding: 0.5rem 0 24rem;
   position: relative;
 }
 
@@ -2674,7 +2674,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1200px) {
   .s-works {
-    padding: 15rem 0 22.2rem;
+    padding: 1rem 0 2.2rem;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -2705,7 +2705,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 400px) {
   .s-works {
-    padding: 9.6rem 0 21rem;
+    padding: 1.6rem 0 21rem;
   }
 
   .masonry-wrap {
@@ -3002,7 +3002,7 @@ html.no-csstransitions .home-content__main {
 .contact-email {
   display: inline-block;
   font-family: "metropolis-light", sans-serif;
-  font-size: 5.4rem;
+  font-size: 3.4rem;
   line-height: 1.222;
   color: #ffffff;
   padding-top: 3.6rem;
