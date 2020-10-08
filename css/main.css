@@ -3412,4 +3412,36 @@ html.no-csstransitions .home-content__main {
   }
 }
 
+#backtotop {
+  display: inline-block;
+  background-color: #cc147f;
+  width: 3em;
+  height: 3em;
+  line-height: 3.5em;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#backtotop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#backtotop:active {
+  background-color: #555;
+}
+
+#backtotop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 /*# sourceMappingURL=main.css.map */
