@@ -95,6 +95,22 @@
 
     };
 
+   /* scrolltotop
+    * ----------------------------------------------------- */
+    var btn = $('#backtotop');
+
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 600) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+
+    btn.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '300');
+    });
 
    /* photoswipe
     * ----------------------------------------------------- */
@@ -287,7 +303,6 @@
             easing: 'ease-in-sine',
             delay: 300,
             once: true,
-            disable: 'mobile'
         });
 
     };
@@ -323,27 +338,6 @@
             5: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.'
         } 
 
-    };
-
-
-   /* Back to Top
-    * ------------------------------------------------------ */
-    var clBackToTop = function() {
-        
-        var pxShow  = 500,         // height on which the button will show
-        fadeInTime  = 400,         // how slow/fast you want the button to show
-        fadeOutTime = 400,         // how slow/fast you want the button to hide
-        scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
-        goTopButton = $(".cl-go-top")
-        
-        // Show or hide the sticky footer button
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() >= pxShow) {
-                goTopButton.fadeIn(fadeInTime);
-            } else {
-                goTopButton.fadeOut(fadeOutTime);
-            }
-        });
     };
 
 
